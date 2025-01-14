@@ -3,6 +3,9 @@
 ## Overview
 This project demonstrates an interactive card animation triggered by a **long click** followed by **upward mouse movement**.
 
+## Live Demo
+[Click for live demo ](https://task-a-lovat.vercel.app/)
+
 ## Setup Instructions
 
  **Clone the repository**:
@@ -29,8 +32,7 @@ Handles tracking of mouse movement and adds dynamic behaviors, such as triggerin
  2. Work on CSS for a more attractive design and smoother animations
  3. Ensure the animation triggers on touch devices as well, by adding support for touch events.
 
-## Live Demo
-[Click for live demo ](https://task-a-lovat.vercel.app/)
+
 
 ## Time Spend
 Around 3 hours
