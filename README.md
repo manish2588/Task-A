@@ -6,8 +6,8 @@ This project demonstrates an interactive card animation triggered by a **long cl
 ## Setup Instructions
 
  **Clone the repository**:
-   1.git clone https://github.com/manish2588/Task-A.git
-   2.open the index.html file in your browser
+   1. git clone https://github.com/manish2588/Task-A.git
+   2. open the index.html file in your browser
 
 ## Technology Choices and Rationale
 
