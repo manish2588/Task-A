@@ -32,3 +32,5 @@ Handles tracking of mouse movement and adds dynamic behaviors, such as triggerin
 ## Live Demo
 [Click for live demo ](https://task-a-lovat.vercel.app/)
 
+## Time Spend
+Around 3 hours
