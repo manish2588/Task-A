@@ -14,11 +14,11 @@ function rotateCards() {
 
   // Scale down the center card instantly as it moves up
   centerCard.style.transform = "translateY(-75%) scale(0.7)";
-  centerCard.style.transition = "transform 0.5s ease";
+  centerCard.style.transition = "transform 300ms ease";
 
   //  scaling up and moving smoothly (the below card)
   belowCard.style.transform = "translateY(0%) scale(1.1)";
-  belowCard.style.transition = "transform 0.5s ease, opacity 0.5s ease";
+  belowCard.style.transition = "transform 300ms ease, opacity 300ms ease";
   belowCard.classList.add("card-enter");
 
   setTimeout(() => {
@@ -34,7 +34,7 @@ function rotateCards() {
 
     centerCard.style.transform = "";
     belowCard.style.transform = "";
-  }, 500);
+  }, 300);
 }
 
 // Function to handle mouse interactions (long click and upward movement)
@@ -77,6 +77,6 @@ function handleMouseEvents(card) {
 }
 
 
-document.querySelectorAll(".card").forEach((card) => {
+document.querySelectorAll('.card').forEach(card => {
   handleMouseEvents(card);
 });
