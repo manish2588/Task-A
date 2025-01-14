@@ -1,6 +1,6 @@
 let isLongClick = false;
 let startTime = 0;
-const longClickThreshold = 40; // for tracking long click in ms
+const longClickThreshold = 20; // for tracking long click in ms
 let isMouseMovingUp = false;
 let lastY = 0;
 
