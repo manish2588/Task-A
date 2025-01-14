@@ -76,7 +76,7 @@ function handleMouseEvents(card) {
   });
 }
 
-// Apply mouse events to all cards
+
 document.querySelectorAll(".card").forEach((card) => {
   handleMouseEvents(card);
 });
