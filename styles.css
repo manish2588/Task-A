@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -19,9 +20,9 @@ html, body {
 .card {
   width: 400px;
   height: 400px;
-  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
-  border-radius: 20px; /* Rounded corners */
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  background-color: rgba(255, 255, 255, 0.2); 
+  border-radius: 20px; 
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2); 
   font-size: 1.5rem;
   position: absolute;
   transition: transform 0.5s ease, opacity 0.5s ease;
@@ -72,7 +73,7 @@ p {
   border-radius: 10px;
 }
 
-/* Initial positions */
+/*Initial positions */
 .card-above {
   transform: translateY(-75%) scale(0.7);
   opacity: 0.5;
@@ -91,29 +92,9 @@ p {
   z-index: 0;
 }
 
-/* Scale up when moving to the center */
-.card-below-to-center {
-  transform: translateY(0%) scale(1.2); /* Quickly scales up */
-  opacity: 1;
-  z-index: 2;
-}
-
-/* Scale down when center moves up */
-.card-center-to-top {
-  transform: translateY(-150%) scale(0.7); /* Quickly scales down */
-  opacity: 0.5;
-  z-index: 1;
-}
-
-/* Cards exit and re-enter (card moving out of bottom) */
+/* Cards exit and re-enter animation */
 .card-exit {
   transform: translateY(150%) scale(0.7);
-  opacity: 0;
-  z-index: 0;
-}
-
-.card-above-to-bottom {
-  transform: translateY(150%);
   opacity: 0;
   z-index: 0;
 }
@@ -122,17 +103,4 @@ p {
   transform: translateY(0%);
   opacity: 1;
   z-index: 2;
-}
-
-.card-below-enter {
-  transform: translateY(0%) scale(0.7);
-  opacity: 1;
-  z-index: 0;
-  transition: transform 0.5s ease, opacity ease;
-}
-
-.card-center-up {
-  transform: translateY(-150%) scale(0.7);
-  opacity: 0.5;
-  z-index: 1;
 }
