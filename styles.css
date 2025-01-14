@@ -1,0 +1,138 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #e1a475, #ad0df2, #c351f5);
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card {
+  width: 400px;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  font-size: 1.5rem;
+  position: absolute;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  padding: 20px;
+}
+
+.skeleton-upper {
+  height: 40%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.skeleton-lower {
+  display: flex;
+  height: 60%;
+  width: 100%;
+}
+
+.skeleton-details {
+  padding: 10px;
+  width: 90%;
+  height: 100%;
+}
+
+.skeleton-logo {
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+h1 {
+  height: 20px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0;
+  border-radius: 10px;
+}
+
+p {
+  height: 10px;
+  width: 100px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-top: 5px;
+  border-radius: 10px;
+}
+
+/* Initial positions */
+.card-above {
+  transform: translateY(-75%) scale(0.7);
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.card-center {
+  transform: translateY(0%) scale(1);
+  opacity: 1;
+  z-index: 2;
+}
+
+.card-below {
+  transform: translateY(75%) scale(0.7);
+  opacity: 0.5;
+  z-index: 0;
+}
+
+/* Scale up when moving to the center */
+.card-below-to-center {
+  transform: translateY(0%) scale(1.2); /* Quickly scales up */
+  opacity: 1;
+  z-index: 2;
+}
+
+/* Scale down when center moves up */
+.card-center-to-top {
+  transform: translateY(-150%) scale(0.7); /* Quickly scales down */
+  opacity: 0.5;
+  z-index: 1;
+}
+
+/* Cards exit and re-enter (card moving out of bottom) */
+.card-exit {
+  transform: translateY(150%) scale(0.7);
+  opacity: 0;
+  z-index: 0;
+}
+
+.card-above-to-bottom {
+  transform: translateY(150%);
+  opacity: 0;
+  z-index: 0;
+}
+
+.card-enter {
+  transform: translateY(0%);
+  opacity: 1;
+  z-index: 2;
+}
+
+.card-below-enter {
+  transform: translateY(0%) scale(0.7);
+  opacity: 1;
+  z-index: 0;
+  transition: transform 0.5s ease, opacity ease;
+}
+
+.card-center-up {
+  transform: translateY(-150%) scale(0.7);
+  opacity: 0.5;
+  z-index: 1;
+}
